@@ -38,7 +38,7 @@
   font: 800 0.4198540888em/1.29 "KeepSansExtraBold", Helvetica, Arial, serif;
 }
 .untitled-page .hero_title1_span2 {
-  font: 0.4723358499em/1.33 "MiSans", Helvetica, Arial, serif;
+  font: 0.4723358499em/1.33 "MiSansF";
   letter-spacing: 1.89px;
 }
 .untitled-page .hero_title1_box1 {
@@ -60,7 +60,7 @@
   width: 169px;
 }
 .untitled-page .hero_title1_span21 {
-  font: 0.4723358499em/1.33 "MiSans", Helvetica, Arial, serif;
+  font: 0.4723358499em/1.33 "MiSansF";
 }
 .untitled-page .hero_title2 {
   bottom: 430px;
@@ -109,7 +109,7 @@
   font: 500 37.897518158px/1.31 "Roboto", Helvetica, Arial, serif;
 }
 .untitled-page .big_title_span0 {
-  font: 500 1em/1.31 "MiSans", Helvetica, Arial, serif;
+  font: 500 1em/1.31 "MiSansF";
 }
 .untitled-page .big_title_span1 {
   font: 500 1em/1.16 "Roboto", Helvetica, Arial, serif;
@@ -117,7 +117,7 @@
 .untitled-page .title {
   bottom: 1443px;
   color: #817b85;
-  font: 500 28px/1.32 "MiSans", Helvetica, Arial, serif;
+  font: 500 28px/1.32 "MiSansF";
   height: 37px;
   left: 516px;
   position: absolute;
@@ -139,7 +139,7 @@
 .untitled-page .title2 {
   bottom: 1443px;
   color: #817b85;
-  font: 500 28px/1.32 "MiSans", Helvetica, Arial, serif;
+  font: 500 28px/1.32 "MiSansF";
   height: 37px;
   left: 564px;
   position: absolute;
@@ -168,7 +168,7 @@
   font-weight: 1000;
 }
 .untitled-page .hero_title11_span2 {
-  font: 0.2615384615em/1.32 "MiSans";
+  font: 0.2615384615em/1.32 "MiSansF";
 }
 .untitled-page .image1 {
   bottom: 1446px;
