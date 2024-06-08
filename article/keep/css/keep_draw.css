@@ -106,19 +106,19 @@
 }
 .untitled-page .big_title {
   color: white;
-  font-family: 'MiSansCN', 'Roboto', sans-serif;
+  font-family: 'MiSansCN', 'MiSansF', 'Roboto';
   font-size: 38px;
   width: 480px;
 }
 .untitled-page .title {
   bottom: 1443px;
   color: #817b85;
-  font: 500 26px/1.32 "MiSansF";
+  font: 500 28px/1.32 "MiSansF";
   height: 37px;
-  left: 516px;
+  left: 519px;
   position: absolute;
   right: 316px;
-  top: 254px;
+  top: 255px;
   width: 28px;
 }
 .untitled-page .title1 {
@@ -135,7 +135,7 @@
 .untitled-page .title2 {
   bottom: 1446px;
   color: #817b85;
-  font: 500 28px/1.17 "Roboto", Helvetica, Arial, serif;
+  font: 500 28px/1.17 "MiSansF", Helvetica, Arial, serif;
   height: 37px;
   left: 564px;
   position: absolute;
