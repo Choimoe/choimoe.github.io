@@ -47,9 +47,8 @@
     <h1 class="hero_title2" id="edit05" choimoe-data-editable>78’90’’</h1>
     <h1 class="hero_title3" id="edit06" choimoe-data-editable contenteditable="true">45:67:89</h1>
     <h1 class="hero_title4" id="edit07" choimoe-data-editable contenteditable="true">12:34:56</h1>
-    <h1 class="big_title_box" id="edit08" choimoe-data-editable contenteditable="true">
-      <span class="big_title"><span class="big_title_span0">很逆天的</span><span
-          class="big_title_span1">_Keeper114514</span></span>
+    <h1 class="big_title_box">
+      <span class="big_title" id="edit08" choimoe-data-editable contenteditable="true">id是记得修改下面的时间</span>
     </h1>
     <h1 class="title" id="edit09" choimoe-data-editable contenteditable="true">晴</h1>
     <h1 class="title1" id="edit10" choimoe-data-editable contenteditable="true">1234/56/78 90:12 - 34:56 ·      ·</h1>
@@ -106,9 +105,9 @@
       length_.addEventListener('input', updateSpeed_KL);
       time_str.addEventListener('input', updateSpeed_KL);
       updateSpeed_KL();
-      upHeight_.innerText = 10 + randomIntFromRange(0, 21);
-      fre_.innerText = 125 + randomIntFromRange(0, 15);
-      strange_.innerText = 30 + randomIntFromRange(0, 60);
+      upHeight_.innerText = randomIntFromRange(10, 31);
+      fre_.innerText = randomIntFromRange(130, 170);
+      strange_.innerText = randomIntFromRange(30, 90);
     </script>
     <script>
       const editableSpans = document.querySelectorAll('[choimoe-data-editable]');

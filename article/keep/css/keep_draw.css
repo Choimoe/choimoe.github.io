@@ -106,23 +106,19 @@
 }
 .untitled-page .big_title {
   color: white;
-  font: 500 37.897518158px/1.31 "Roboto", Helvetica, Arial, serif;
-}
-.untitled-page .big_title_span0 {
-  font: 500 1em/1.31 "MiSansF";
-}
-.untitled-page .big_title_span1 {
-  font: 500 1em/1.16 "Roboto", Helvetica, Arial, serif;
+  font-family: 'MiSansCN', 'Roboto', sans-serif;
+  font-size: 38px;
+  width: 480px;
 }
 .untitled-page .title {
   bottom: 1443px;
   color: #817b85;
-  font: 500 28px/1.32 "MiSansF";
+  font: 500 26px/1.32 "MiSansF";
   height: 37px;
   left: 516px;
   position: absolute;
   right: 316px;
-  top: 255px;
+  top: 254px;
   width: 28px;
 }
 .untitled-page .title1 {
@@ -137,14 +133,14 @@
   width: 394px;
 }
 .untitled-page .title2 {
-  bottom: 1443px;
+  bottom: 1446px;
   color: #817b85;
-  font: 500 28px/1.32 "MiSansF";
+  font: 500 28px/1.17 "Roboto", Helvetica, Arial, serif;
   height: 37px;
   left: 564px;
   position: absolute;
   right: 187px;
-  top: 255px;
+  top: 256px;
   width: 130px;
 }
 .untitled-page .hero_title11_box {
