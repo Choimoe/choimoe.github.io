@@ -1,0 +1,1403 @@
+<!doctype html>
+<html style='font-size:24px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>复习</title><link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-block-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * Copyright (C) 2018 Drake, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * GitHub https://github.com/liangjingkanji/DrakeTyporaTheme
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #b3bec4;
+    --bg-color: #212121;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #323232;
+    --active-file-bg-color: var(--item-hover-bg-color);
+    --mermaid-theme: night;
+
+    --blur-text-color: rgba(179, 190, 196, 0.5);
+    --md-char-color: #535455;
+    --side-bar-bg-color: var(--bg-color);
+    --search-select-bg-color: #ffffff;
+    --search-select-text-color: var(--bg-color);
+    --select-text-bg-color: #3473B068;
+    --window-border: 1px solid #282828;
+
+    --drake-accent: #ff9800;
+    --drake-highlight: #ff9800;
+    --a-color: var(--drake-highlight);
+    --variable-color: var(--drake-highlight);
+    --outline-active-color: var(--a-color);
+    --code-block-bg-color: #1b1b1b;
+    --code-block-color: var(--text-color);
+    --title-color: #bbc6d2;
+    --blockquote-border-color: var(--drake-accent);
+    --blockquote-color: var(--text-color);
+    --blockquote-bg-color: rgba(255, 185, 82, 0.05);
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--drake-highlight);
+    --height-light-border-color: var(--drake-highlight);
+    --yaml-color: #676773;
+    --yaml-bg-color: var(--code-block-bg-color);
+    --footnotes-bg-color: var(--item-hover-bg-color);
+    --footnotes-highlight: #FFD760;
+    --table-border-color: var(--item-hover-bg-color);
+    --table-header-bg-color: #292929;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: var(--table-header-bg-color);
+    --input-bg-color: var(--item-hover-bg-color);
+    --btn-hover-bg-color: var(--item-hover-bg-color);
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23acb7c4'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 0.5rem !important;
+    border-radius: 2px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: none;
+    line-height: var(--code-block-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+  font-size: 120% !important;
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+  font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color);
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 2px;
+    color: var(--drake-highlight);
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 4px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blockquote-border-color);
+    border-radius: 2px;
+}
+
+blockquote {
+    color: var(--blockquote-color);
+    border-radius: 2px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+.on-focus-mode #write a .md-plain, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain, .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+a:any-link {
+    color: var(--a-color);
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+h2 .md-plain {
+    padding-bottom: .3rem;
+    border-bottom: .2rem solid var(--h2-underline-color);
+    line-height: 3rem;
+}
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    vertical-align: top;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 1rem;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 500;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/*
+  Name:       material
+  Author:     Mattia Astorino (http://github.com/equinusocio)
+  Website:    https://material-theme.site/
+*/
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: none;
+    border-radius: 2px;
+    padding-left: 0.5rem;
+    background: #212121;
+    color: #545454;
+}
+.cm-s-inner .CodeMirror-guttermarker,
+.cm-s-inner .CodeMirror-guttermarker-subtle,
+.cm-s-inner .CodeMirror-linenumber {
+    color: #545454;
+}
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::selection {
+    background: rgba(128, 203, 196, 0.2);
+}
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+    background: rgba(128, 203, 196, 0.2);
+}
+.cm-s-inner .cm-keyword {
+    color: #C792EA;
+}
+.cm-s-inner .cm-operator {
+    color: #89DDFF;
+}
+.cm-s-inner .cm-variable-2 {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+    color: #f07178;
+}
+.cm-s-inner .cm-builtin {
+    color: #FFCB6B;
+}
+.cm-s-inner .cm-atom {
+    color: #F78C6C;
+}
+.cm-s-inner .cm-number {
+    color: #FF5370;
+}
+.cm-s-inner .cm-def {
+    color: #82AAFF;
+}
+.cm-s-inner .cm-string {
+    color: #C3E88D;
+}
+.cm-s-inner .cm-string-2 {
+    color: #f07178;
+}
+.cm-s-inner .cm-comment {
+    color: #545454;
+}
+.cm-s-inner .cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner .cm-tag {
+    color: #FF5370;
+}
+.cm-s-inner .cm-meta {
+    color: #FFCB6B;
+}
+.cm-s-inner .cm-attribute {
+    color: #C792EA;
+}
+.cm-s-inner .cm-property {
+    color: #C792EA;
+}
+.cm-s-inner .cm-qualifier {
+    color: #DECB6B;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+    color: #DECB6B;
+}
+.cm-s-inner .cm-error {
+    color: rgba(255, 255, 255, 1.0);
+    background-color: #FF5370;
+}
+.cm-s-inner .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+.cm-s-inner .CodeMirror-selected {
+    background: #214283 !important;
+}
+.cm-s-inner .CodeMirror-selectedtext {
+    background: #214283 !important;
+}
+.cm-s-typora-default .CodeMirror-selectedtext {
+    background: var(--select-text-bg-color) !important;
+}
+.cm-overlay.CodeMirror-selectedtext {
+    background: var(--select-text-bg-color) !important;
+}
+.cm-s-inner div.CodeMirror-cursor {
+    border-left: 1px solid var(--code-block-color);
+}
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = ''><p><a href='../index.html'><span>←返回主页</span></a></p><h1><a name="操作系统复习" class="md-header-anchor"></a><span>操作系统复习</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n280"><a class="md-toc-inner" href="#操作系统复习">操作系统复习</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n2"><a class="md-toc-inner" href="#抄书">抄书</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3"><a class="md-toc-inner" href="#processes--cpu">Processes &amp; CPU</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n61"><a class="md-toc-inner" href="#synchronization">Synchronization</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n92"><a class="md-toc-inner" href="#memory">Memory</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n189"><a class="md-toc-inner" href="#file-system">File-System</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n236"><a class="md-toc-inner" href="#io-systems">IO Systems</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n263"><a class="md-toc-inner" href="#题目">题目</a></span></p></div><h2><a name="抄书" class="md-header-anchor"></a><span>抄书</span></h2><h3><a name="processes--cpu" class="md-header-anchor"></a><span>Processes &amp; CPU</span></h3><ol start='' ><li><p><span>进程的地址空间（逻辑空间布局）：代码区 </span><code>code</code><span> / </span><code>.text</code><span>、数据段（常量区 </span><code>.rodata</code><span>、全局数据区）、堆区 </span><code>.heap</code><span>、栈区 </span><code>.stack</code><span>、命令行参数区。x86 中的堆地址向上生长（低地址→高地址）、栈地址向下生长（高地址→低地址）。</span></p><p><span>进程的运行时布局：只读部分和可读/写部分，只读段包含 </span><code>code</code><span>、</span><code>.text</code><span> 与 </span><code>.rodata</code><span>，读写段包含 </span><code>.rwdata</code><span>、</span><code>.bss</code><span>、堆栈区。</span></p><p><span>进程的进程实体包括：程序段、数据段、PCB、堆栈、寄存器。</span></p><p><span>（即使每次代码段相同，处理的数据段也相同，但OS为其分配PCB、进程号、堆、栈等系统分配资源肯定不同，故一个程序不能多次属于同一个进程）</span></p></li><li><p><span>操作系统的三个要求：</span></p><ul><li><span>Multiplexing：多个程序可并发执行，多处理器环境下多个程序可并行执行，共享CPU、内存、I/O设备软件资源与硬件资源。</span></li><li><span>Isolation：一个程序的运行不能影响OS，以及其他程序的运行。每个进程有独立的内存运行空间、CPU、I/O 设备，&quot;感觉整个系统只有自己在运行，自己拥有一台私有的计算机系统&quot;。</span></li><li><span>Interaction：共享终端（显示器、键盘等）。</span></li></ul></li><li><p><span>ELF 由由4部分组成：ELF 头、程序头表、节、节头表。ELF 头描述文件的类型、程序头表与节区头表在文件中的位置和大小等信息。软件在运行时使用程序头表，在链接时使用节头表。</span></p></li><li><p><span>进程五个基本特征：动态性、独立性、并发性、异步性、结构特征。</span></p><p><span>动态性：由创建而产生，由调度而执行，因得不到资源而暂停执行，由撤销而消亡，具有一定的生命期。</span></p><p><span>独立性：是系统中独立获得资源和独立调度的基本单位。支持线程的系统中，</span><em><span>进程</span></em><span> 是 </span><em><span>独立获得资源</span></em><span> 的基本单位，</span><em><span>线程</span></em><span> 是 </span><em><span>独立调度</span></em><span> 的基本单位。</span></p></li><li><p><span>进程的状态：新建、就绪、执行、阻塞、结束。</span></p><p><code>fork()</code><span>：新建→就绪；</span><code>yield()</code><span>：执行→就绪；</span><code>sleep()</code><span>：执行→阻塞；</span><code>finish()</code><span>：执行→结束。</span></p><p><span>在 </span><code>xv6</code><span> 中新建被分为 </span><code>UNUSED</code><span>（PCB 尚未使用）与 </span><code>USED</code><span>（正在初始化），其中结束状态为 </span><code>ZOMBIE</code><span>（父进程没有调用 </span><code>wait()</code><span> 来回收，调用后转为 </span><code>UNUSED</code><span>）。</span></p><p><img src="https://s2.loli.net/2024/06/18/5ovtOAcTWS2Rxlr.png" alt="image-20240618224600559" style="zoom: 67%;" /></p></li><li><p><span>PCB：系统为了管理进程设置的一个专门的数据结构，用它来记录进程的外部特征，描述进程的运动变化过程。系统利用 PCB 来控制和管理进程，故 PCB 是系统感知进程存在的唯一标志，PCB 和进程一一对应，例如进程队列实际上是 PCB 队列。</span></p><p><span>系统启动时，初始化一个进程表，其大小决定了系统中最多可同时存在的进程个数，称为系统的并发度。</span></p><p><code>fork</code><span> 的功能：父进程调用fork创建一个子进程（在进程表中找一个空项分配、分配 PCB、赋予 PID、将子进程的状态设置为新建）、系统复制父进程的上下文到子进程的地址空间、子进程在它自己独立的地址空间中运行、父子进程并发执行。对父进程返回子进程的进程号，对子进程返回 0。</span></p></li><li><p><span>进程间通讯：</span></p><ul><li><span>共享内存：拿出一块虚拟地址空间来，映射到相同的物理内存中。但当多个进程向同一个共享内存中写入数据时可能会产生覆盖。</span></li><li><span>消息队列：保存在内核中的消息链表。但通信过程中，存在用户态与内核态之间的数据拷贝开销。</span></li><li><span>管道：实现简单，但是是单向的、通信方式效率较低。</span></li></ul></li><li><p><span>Job：批处理系统中，计算机操作员提供给操作系统执行任务的工作单元。提交给系统的 Job 形成 Job 队列，系统根据一定作业调度算法来进行执行。</span></p><p><span>调度算法：短线调度（CPU 的调度）、中线调度（Swapping）、长线调度（Job 调度）。</span></p></li><li><p><span>调度的评价标准：CPU 利用率、系统吞吐量、响应时间与周转时间（平均周转时间、带权周转时间、平均带权周转时间）。</span></p></li><li><p><span>常见调度算法：（无特殊标注都为任务调度、进程调度都可）</span></p></li></ol><ul><li><span>先来先服务（FCFS）：不利于短进程。</span></li><li><span>短作业优先调度算法（SJF）：优先分配最快完成的作业。所有作业同时到达时，SJF 是最佳算法，平均周转时间最短，但对长作业不利。当有短作业不断进入就绪队列时，长作业会产生饥饿现象。</span></li><li><span>优先级调度算法：分配给优先级最高。动态优先级：占用时间长短、等待时间长短；静态优先级：进程类、作业资源要求（内存大小、IO 类型与数量）、用户类型。分为抢占式和非抢占式，区别在于更高优先级的进程加入时是否停止当前进程。在优先级相同的情况下，通常按照 FCFS 和 SJF 的顺序执行。</span></li><li><span>时间片轮转调度算法（进程调度）：将所有的就绪进程按先后顺序排成队列，总是选择第一个进程执行，执行一个时间片后将进程置于队尾。</span></li><li><span>多级反馈队列调度算法（进程调度）：多个就绪队列，每个队列中进程执行时间片的大小不相同，优先级越高，对应时间片越短；在一个时间片结束时未执行完毕则转入下一个队列末尾。同时会有抢占。</span></li></ul><h3><a name="synchronization" class="md-header-anchor"></a><span>Synchronization</span></h3><ol start='' ><li><p><span>互斥应该遵循：空闲让进、忙则等待、有限等待、让权等待。</span></p></li><li><p><span>经典同步问题：</span></p><ul><li><p><span>生产者-消费者：</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 63px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 59px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>17</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style="text-rendering: auto;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -59px; width: 59px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">full</span><span class="cm-operator">=</span><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">empty</span><span class="cm-operator">=</span><span class="cm-variable">n</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">mutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">producer</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">empty</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">full</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">consumer</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">full</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">empty</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 646px;"></div><div class="CodeMirror-gutters" style="height: 646px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 47px;"></div></div></div></div></pre><p><span>P 的顺序不能颠倒，可能会导致死锁；V 的顺序没有要求。</span></p><p><span>多生产者或多消费者时 mutex 不能取消，保证对缓冲池的互斥访问（互斥信号量是给同类访问的）。</span></p></li><li><p><span>读者-写者：</span></p><p><span>读者优先：</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 63px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 59px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>20</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style="text-rendering: auto;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -59px; width: 59px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">rmutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">mutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">reader</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">readercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">readercount</span><span class="cm-operator">++</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">readercount</span><span class="cm-operator">--</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">readercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">writer</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 760px;"></div><div class="CodeMirror-gutters" style="height: 760px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 47px;"></div></div></div></div></pre><p><span>公平情况：对上面读者有限增设信号量 </span><code>wmutex=1</code><span>，表示是否存在正在写或等待的读者，若存在则禁止新读者进入。</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 63px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 59px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>25</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style="text-rendering: auto;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -59px; width: 59px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">wmutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">rmutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">mutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">reader</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">wmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">readercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">readercount</span><span class="cm-operator">++</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">wmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">readercount</span><span class="cm-operator">--</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">readercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">writer</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">wmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">wmutex</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 950px;"></div><div class="CodeMirror-gutters" style="height: 950px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 47px;"></div></div></div></div></pre><p><span>写者优先：</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 63px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 59px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>34</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style="text-rendering: auto;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -59px; width: 59px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">wmutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">rmutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">mutex</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">readable</span><span class="cm-operator">=</span><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">reader</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">readable</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">readercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">readercount</span><span class="cm-operator">++</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">readable</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">readercount</span><span class="cm-operator">--</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">readercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">rmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">writer</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span>(<span class="cm-atom">true</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">wmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">writercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-variable">P</span>(<span class="cm-variable">readable</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">writercount</span><span class="cm-operator">++</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">wmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// ...</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">mutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">P</span>(<span class="cm-variable">wmutex</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">writercount</span><span class="cm-operator">--</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span>(<span class="cm-variable">writercount</span><span class="cm-operator">==</span><span class="cm-number">0</span>):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 12px; width: 39px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-variable">P</span>(<span class="cm-variable">readable</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -59px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 12px; width: 39px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">V</span>(<span class="cm-variable">wmutex</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 1292px;"></div><div class="CodeMirror-gutters" style="height: 1292px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 47px;"></div></div></div></div></pre></li><li><p><span>哲学家进餐：...</span></p></li><li><p><span>理发师：...</span></p></li></ul></li><li><p><span>死锁：</span></p><p><span>死锁产生的必要条件：互斥条件、不剥夺条件、请求和保持条件、环路等待条件。</span></p><p><span>处理死锁：不处理、死锁预防（调度方式上破坏条件）、死锁避免（预知是否会死锁）、检测及解除死锁。</span></p><p><span>（死锁预防对系统限制条件严格；死锁避免需要提前计算分配后系统是否安全）</span></p><p><span>银行家算法。</span></p></li></ol><p>&nbsp;</p><h3><a name="memory" class="md-header-anchor"></a><span>Memory</span></h3><ol start='' ><li><p><span>内存保护：</span></p><ul><li><span>界限寄存器方法：上下界寄存器法（分别存放作业的结束地址和开始地址，访问时比较超出则中断）、基址和限长寄存器方法（限长寄存器和相对地址比较超出则中断）。</span></li><li><span>存储保护键方法：给储存块分配单独的保护键，每个作业赋予一个键，访问时不匹配则中断。</span></li></ul></li><li><p><span>覆盖与交换：</span></p><ul><li><span>覆盖：早期系统中把程序分为程序段来操作覆盖段，覆盖段可重用。</span></li><li><span>交换：把暂时不用的某个程序及数据部分从内存移到外存中，腾出空间（处理器中的中级调度）。</span></li></ul></li><li><p><span>连续分配管理方式。</span></p><p><span>内碎片：已经分配给作业但不能被利用的内存空间；外碎片：还没有分配给作业但不能被利用的空间。</span></p><ul><li><p><span>单一连续分配：只用于单用户、单任务的操作系统，各类资源利用率低，会产生内部碎片。</span></p></li><li><p><span>固定分区分配：系统建立分区说明表，程序通过静态重定位的方式装入内存。不能实现多进程共享一个主存区，会产生内部碎片。</span></p></li><li><p><span>动态分区分配：使用空闲分区表（记录分区号、起始地址、大小和状态）、空闲分区链。</span></p><p><span>分区分配算法：</span></p><ul><li><span>首次适应（FF）：空闲分区按照地址递增的顺序串成队列，每次进程分配内存时都从队首开始找，顺着链表找到足够大的空闲分区。缺点：低地址外部碎片多、查找开销大。</span></li><li><span>下次适应（NF）：如上，改为循环队列，从上次找到的分区的下一个分区开始找。缺点：缺乏大的空闲分区。</span></li><li><span>最佳适应（BF）：空闲分区按照容量递增的顺序，分配空间时将满足大小的最小空闲分区分配给作业。缺点：产生很多难以利用的碎片空间。</span></li><li><span>最差适应（WF）：如上，将满足大小的最大空闲分区分配给作业。缺点：大作业空间得不到满足。</span></li></ul><p><span>分区的动态管理：</span></p><ul><li><span>拼接技术（紧缩）：将所有已分配分区移动到主存的一端。</span></li><li><span>回收时立即拼接 / 找不到空闲时拼接。</span></li></ul><p><span>缺点：存在外部碎片、无法实现多进程共享储存器（多进程共享主存段）、无法实现主存的扩充。</span></p></li></ul></li><li><p><span>非连续分配管理：</span></p><ul><li><p><span>分页存储：作业的地址空间划分为若干个大小相等的区域，称为页，将主存的储存空间也分为与页大小相等的区域，称为块。为作业分配空间时，以块为单位来分配。</span></p><p><span>分页储存管理的逻辑地址包含：页号 P 与页内位移 W。为了将连续的页号映射到多个块，需要设立页表存放对应关系（页表寄存器会存放页表起始地址与页表长度）。具体访问步骤：计算页号与页内位移、比较长度超出则产生越界中断、页号与页表起始地址相加并在页表中找到对应块号、拼接得到物理地址。通过设置快表放置在高速缓冲存储器中可以加速寻找块号的过程。</span></p><p><span>多级页表：由于系统逻辑地址位数较多，页表会很大，故可将逻辑地址划分为外层页号、外层页内地址、页内地址等。先用外层页号再外部页表上查找，找出的单元内容是二级页表的首地址，页表首地址加上外层页内地址就是页表项的地址，内容是块号。</span></p><p><span>页的共享与保护：共享的方法为使页指向相同的物理块。有两种保护：地址越界保护、访问控制保护（设置控制存取字段，根据页面使用情况定义为读写执行等权限，访问时将操作与权限匹配）。</span></p><p><span>优点：内存利用率高、实现离散分配、便于储存访问控制、无外部碎片；缺点：需要硬件支持、内存访问效率下降、共享困难、有内部碎片。</span></p></li><li><p><span>分段存储：按照逻辑关系将作业分段。作业地址空间由若干个逻辑分段组成，每个分段从 0 编址、采用连续的地址空间（所以称段是二维的、分类与段内位移）。</span></p><p><span>逻辑地址由段号 S 和段内位移 W 组成。设立段表，系统为每个进程建立段表，每个段表描述段号、段长、内存起始地址等。寻址过程与分页类似。</span></p><p><span>段的共享与保护：共享通过多个作业的段表中相应表项指向被共享段的同一个物理副本来实现。</span></p><p><span>优点：满足用户需要、便于动态链接和共享、无内部碎片；缺点：需要硬件支持、需要拼接技术来满足分段的动态增长和减少外部碎片、受主存可用空间的限制、有外部碎片。</span></p></li><li><p><span>段页式存储：</span></p><p><span>逻辑地址由段号 S、段内页号 P 和页内位移 D 组成。系统中同时设立段表与页表：每个进程建立段表、每个分段有一张页表。段表项包括段号、页表起始地址、页表长度。页表项包括页号和块号。</span></p><p><span>段页式结合段式和页式的优点、但段页式的内部碎片比页式要多。</span></p><table><thead><tr><th rowspan="2">对比及联系</th><th colspan="3">内存管理方式</th></tr><tr><th>分页存储管理</th><th>分段存储管理</th><th>段页式存储管理</th></tr></thead><tbody><tr><td>有无外部碎片</td><td>无</td><td>有</td><td>无</td></tr><tr><td>有无内部碎片</td><td>有</td><td>无</td><td>有</td></tr><tr><td>优点</td><td>内存利用率高，基本解决了 内存零头问题</td><td>段拥有逻辑意义，便于共享、保护和动态链接</td><td>兼有两者的优点</td></tr><tr><td>缺点</td><td>页缺乏逻辑意义，不能很好地满足用户</td><td>内存利用率不高，难以找到连续的空闲区放入整段</td><td>多访问一次内存</td></tr></tbody></table></li></ul></li><li><p><span>虚拟内存：</span></p><p><span>特征：离散型、多次性（作业可分成多次调入内存）、交换性（在运行过程中换入、换出）、虚拟性（逻辑上扩充内存容量）。</span></p><p><span>储存管理方式：</span></p><ul><li><p><span>请求分页储存管理方式：请求分页 = 基本分页 + 请求调页功能 + 页面置换功能。</span></p><p><span>扩充后的页表项有：页号、物理块号、状态位（是否在主存）、访问字段（被访问的次数、由置换算法参考）、修改位（调入内存后是否被修改）、外存地址（在外存的存放地址，调入页面时使用）。</span></p><p><span>缺页中断：若发现访问的页面不在内存，产生缺页中断。缺页中断处理程序根据此页在外存中的处理位置将其调入内存。调页过程中若有空闲则直接装入，若无空闲需要先淘汰一些页面：</span></p><p><img src="https://s2.loli.net/2024/06/20/nQzqJsF3oZ2yuW7.png" alt="image-20240620190854852" style="zoom: 67%;" /></p><p><span>缺页中断是特殊的中断：在指令的执行期间产生和处理缺页中断、一条指令可以产生多个缺页中断。</span></p><p><span>缺点：有些情况下系统产生抖动现象、最后一页仍然存在未被利用的部分。</span></p><p><span>页面置换：页面置换算法优劣直接影响系统效率。常见页面置换算法：</span></p><ul><li><span>最佳置换（OPT）：预知页面号引用串时，每次都淘汰以后不再使用或以后最迟被再使用的页面。无法实现，用作标准衡量其他算法优劣。</span></li><li><span>先进先出（FIFO）：淘汰最先进入内存的页面。会产生 Belady 异常，且忽略了最早调入的页面往往是使用最频繁的页面。</span></li><li><span>最近最少使用（LRU）：淘汰最近最长时间未被使用的页面。使用寄存器组和栈实现，最接近最佳置换算法。</span></li><li><span>时钟置换（CLOCK）：设置访问位，维护所有页面的循环链表，当程序访问链表中有的页面时，页面访问位置 1，否则需要淘汰一个内存中的页面，当指向页面访问位为 1 时，访问位清零并下移，访问位为 0 时，淘汰这一页面并将访问位置为 1、指针下移。是 LRU 和 FIFO 的折中。</span></li><li><span>改进时钟置换：增加修改位，优先淘汰没有修改过的界面。步骤如下：首先从当前位置循环扫描链表，遇到的第一个访问位和修改位都等于 0 的页面用于替换；若无法找到，重新扫描，寻找访问位为 0 的页面用于替换，这次扫描时将访问位置 0；若仍未找到，重新执行一遍前两步即可。</span></li></ul><p><span>抖动现象与缺页率：</span></p><ul><li><span>Belady 异常：FIFO 置换算法的缺页率可能岁分配物理块数增加而增加。原因是 FIFO 的置换特征与进程访问内存的动态特征矛盾。LRU、OPT 与归类为堆栈算法的页面置换算法不会出现。</span></li><li><span>抖动现象：可能会有页面不断被调入调出的情况，系统大部分时间花在调入调出上。原因是请求分页系统每个进程只能分配到所需全部内存空间的一部分。</span></li><li><span>缺页率：作业在运行中共需访问 A 次页面，页面需要调入内存的次数为 F，则缺页率 f=F/A，命中率为 1-f。</span></li></ul></li><li><p><span>请求分段储存管理系统：在运行前将当前需要的若干段装入主存，运行过程中若访问的分段不在主存，则通过调段功能调入主存。将段表扩充为：段号、段长、内存始址、访问字段、修改位、状态位、外存地址。</span></p><p><span>当访问的段不在主存中，则会产生缺段中断信号。操作系统处理时先在主存中查找是否有足够大的分区存放此段，若没有这样的分区，则检查空闲分区容量综合来进行拼接，或调出一个或几个段后再装入。</span></p></li></ul></li></ol><h3><a name="file-system" class="md-header-anchor"></a><span>File-System</span></h3><ol start='' ><li><p><span>FCB：文件控制块。文件由文件控制块与文件体两部分组成，FCB 包含的内容至少有：文件名、文件的结构（记录式还是流式、物理结构）、文件物理位置（储存地址与文件长度等）、存取控制信息、管理信息（建立日期、上次存取日期、当前使用状态）。UNIX 称 FCB 为索引节点（i-node）。</span></p></li><li><p><span>文件打开：</span></p><p><span>内核对所有打开的文件维护一个系统级的表格，也就是打开文件表，各个条目称为打开文件的句柄，句柄中给出了打开文件相关的所有信息，如：读写偏移量（调用 read 和 write 时更新）、文件访问模式、对该文件 i-node 对象的引用、文件类型和访问权限。</span></p><p><span>open 的过程为：</span></p><ol start='' ><li><span>解析 open 系统调用给出的文件路径，确定文件名所在的文件目录表。根据文件名查找文件目录表，找到该文件所在的目录项；如果不存在文件，返回错误。</span></li><li><span>根据目录项找到要打开文件的 FCB，读入到全局的 FCB 表中，并设置相关信息。</span></li><li><span>在全局“文件表”中为该文件分配一个表项，建立指向 FCB 表中对应的 FCB 项的指针，并设置其它相关信息。</span></li><li><span>在进程的局部打开文件表中（U-area，PCB 的一部分）建立指向全局文件表中的相应项的指针，open 返回该文件在局部打开文件表中的偏移，即File Descriptor。</span></li></ol></li><li><p><span>文件共享方式：</span></p><ul><li><p><span>硬链接：基于索引结点的共享方式。传统树形文件目录的共享式不同用户通过将各自文件的 FCB 设置成相同的物理地址来实现的，而索引结点将 FCB 中的文件描述系统单独构成一个数据结构，并加入计数值来统计指向该索引结点的目录项的个数。</span></p><p><span>能够实现文件的异名共享，但当文件被多个用户共享时拥有者无法删除。</span></p></li><li><p><span>软链接：利用符号链实现文件共享。创建一个称为链接的新目录项，包含被共享文件的路径。</span></p><p><span>能够让拥有者删除共享文件、可以通过网络链接所有文件，但是访问时需要逐层查找目录、开销较大。</span></p></li></ul></li><li><p><span>文件访问控制：读、写、执行。三类用户：拥有者、拥有者同组用户、其他用户。</span></p></li><li><p><span>文件的实现：</span></p><ul><li><p><span>外存分配通常以块为单位，方式分为连续分配、链接分配、索引分配等。</span></p><p><span>索引分配方式中，系统为每个文件分配了一个索引块，索引块中存放索引表，每个表项对应分配给该文件的一个物理块。索引分配方式支持直接访问、不会产生外部碎片、文件长度受限制，但索引块的分配增加系统存储空间的开销。</span></p><p><span>当文件很大时，索引表也会很大。若索引表的大小超过物理块，可以将索引表本身作为一个文件为其建立索引表构成二级索引，以此类推。</span></p></li><li><p><span>文件储存管理方式为空闲文件表法、空闲块列表法、位示图法（建立表示分配情况的二进制串，请求时，系统顺序扫描找出一组值为 0 的二进制位并分配）、成组链接法。</span></p><p><span>成组链接法适用于大型文件系统，将所有空闲块按每组 N 块分为若干组，将每一组的盘块数量和该组的所有盘块号记入到超级块中，这样每组的第一个盘块就链接成了一个链表，而组内的多个盘块形成了堆栈（是临界资源，会有互斥访问锁）。</span></p></li></ul></li></ol><ol start='4' ><li><p><span>磁盘中的信息：引导控制块（有无操作系统）、分区控制块、目录结构、文件控制块。</span></p><p><span>磁盘的访问时间 = 寻道时间 + 旋转延迟 + 传输时间</span></p><p><span>调度算法：先来先服务（FCFS）、最短寻道时间有限（SSTF）、扫描算法（电梯调度算法、SCAN）、循环扫描（C-SCAN）。</span></p><table><thead><tr><th>调度算法</th><th>为解决什么问题引入</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td>FCFS</td><td></td><td>简单、公平</td><td>未对寻道进行优化，所以平均寻道时间较长，仅适合磁盘请求较少的场合</td></tr><tr><td>SSTF</td><td>为了解决 FCFS 算法平均寻道时间长的问题</td><td>比 FCFS 算法减少了平均寻道时间，有更好的寻道性能</td><td>并非最优，而且会导致“饥饿”现象</td></tr><tr><td>SCAN</td><td>为了解决 SSTF 算法的“饥饿”现象</td><td>兼顾较好的寻道性能和防止 “饥饿”现象，被广泛应用在大中小型机器和网络中</td><td>存在一个请求刚好被错过而需要等待很久的情形</td></tr><tr><td>C-SCAN</td><td>为了解决 SCAN 算法的一个请求可能等待时间过长的问题</td><td>兼顾较好的寻道性能和防止“饥饿”现象，同时解决了一个请求等待时间过长的问题</td><td>可能出现磁臂长期停留在某处不动的情况（磁臂黏着）</td></tr></tbody></table><p><span>RAID 技术：将数据按位级或者按块级分散写入到多个磁盘上，多个磁盘可以同时读写存取操作，实现数据的并行存取，提高了系统的性能；结合数据冗余技术及校验技术，提高系统的可靠性。</span></p><p><img src="https://s2.loli.net/2024/06/21/G8mAzvsTrPd6jBZ.png" alt="image-20240621011937839" style="zoom: 67%;" /></p></li></ol><h3><a name="io-systems" class="md-header-anchor"></a><span>IO Systems</span></h3><ol start='' ><li><p><span>设备在应用程序中使用逻辑设备名称来请求使用，操作系统将目前可用的物理设备分配给该进程（OS 需要借助逻辑设备表 LUT 完成从逻辑设备到物理设备的映射），这易于实现 IO 重定向。</span></p><p><span>IO 控制方式：程序直接控制方式、中断控制方式、DMA 控制方式、通道控制方式。</span></p><p><img src="https://s2.loli.net/2024/06/20/dj5tHcviI2Nwkb4.png" alt="image-20240620221739047" style="zoom: 50%;" /></p><p><span>IO 软件的结构：用户层软件（IO 调用）、设备独立性软件（命名保护阻塞缓冲分配）、设备驱动程序（设备寄存器、检查状态）、中断处理程序（唤醒驱动程序）、硬件。IO 请求自左向右处理、IO 响应自右向左产生。设备独立性软件执行所有设备的公有操作，向用户层（文件层）提供统一接口，从而实现设备的独立性。</span></p></li><li><p><span>缓冲区：缓和 CPU 与设备速度不匹配的矛盾，提高设备和 CPU 的并行操作程度，提高系统吞吐量和设备利用率。</span></p><ul><li><span>单缓冲：当用户进程发出一个 IO 请求时，操作系统便在内存中为它分配一个缓冲区。缓冲区是共享资源，设备与处理器对缓冲区的操作是串行的。</span></li><li><span>双缓冲：缓冲对换。在双机通信时一般设置两个缓冲区用于发送和接受。</span></li><li><span>多缓冲（循环缓冲）：设置环形缓冲区循环处理。</span></li><li><span>缓冲池：设置多个缓冲区，可分为空缓冲队列、输入队列（装满输入数据）、输出队列（装满输出数据）。还有收容/提取 输入/输出数据的工作缓冲区。</span></li></ul></li><li><p><span>SPOOLing：假脱机 IO，利用一台可共享的、高速大容量的块设备（例如硬盘）来模拟独享设备的操作，使一台独享设备变为多台可并行使用的虚拟设备，即把独享设备变为逻辑上的共享设备。</span></p><p><span>脱机输入利用外围控制机将低速 I0 设备上的数据预先输入到磁盘上，然后从磁盘上直接读取输入数据;</span>
+<span>脱机输出利用外围控制机将主机先将输出数据写到磁盘上的数据在低速 IO 设备上输出;</span></p><p><span>可以理解为：基于 SPOOLing 技术，OS 将物理打印机虚拟为磁盘上的一个文件。</span></p></li><li><p><span>流：用户级进程与设备之间的一个全双工的链接，能让应用程序动态地组合驱动程序代码流水线。流机制提供了一个框架，可以方便使用模块化的思想，在 UNIX 中得到广泛应用。</span></p><p><span>流包括：与用户进程之间的接口（流头标）、与设备之间的接口（设备驱动程序尾部）、两个接口之间可以有若干个模块。</span></p></li></ol><p>&nbsp;</p><p>&nbsp;</p><h2><a name="题目" class="md-header-anchor"></a><span>题目</span></h2><blockquote><p><span>请结合操作系统各部分的功能，说明在命令窗口中输入 </span><code>a.out</code><span> 及回车后，到屏幕输出 </span><code>Hello World\n</code><span> 为止，操作系统对程序 </span><code>a.out</code><span> 的处理与执行过程。</span></p></blockquote><p><span>操作系统做了什么？</span></p><ul><li><span>找到 </span><code>a.out</code><span> 程序的相关信息， 检查其类型是否是可执行文件；并通过程序首部信息，确定代码和数据在可执行文件中的位置并计算出对应的磁盘块地址；</span></li><li><span>创建 一个新 的进程，并将 </span><code>a.out</code><span> 可执行文件映射到该进程结构，表示由该进程执行 </span><code>a.out</code><span> 程序；</span></li><li><span>操作系统：为 </span><code>a.out</code><span> 程序设置 CPU 上下文环境，并跳到程序开始处执行 </span><code>a.out</code><span> 程序的第一条指令，由于此时代码数据还没有调入内存，发生缺页异常；</span></li><li><span>分配一页物理内存 ，并将代码从磁盘读入内存，然后继续执行 </span><code>a.out</code><span> 程序 </span><code>a.out</code><span> 程序执行 </span><code>printf</code><span> 函数，在显示器上写一字符串 </span><code>Hello World\n</code><span>；</span></li><li><span>遇到 </span><code>\n</code><span> 刷新缓冲区，找到要将字符串送往的显示设备；</span></li><li><span>控制设备的进程告诉设备的窗口系统它要显示字符串，窗口系统确定这是一个合法的操作，然后将字符串转换成像素，将像素写入设备的存储映像区；</span></li></ul></div>
+</body>
+</html>
