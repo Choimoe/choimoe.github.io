@@ -350,7 +350,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3, MODE_STAIR = 4, MODE
                     cell: i % 4,
                     id: r.id
                 });
-                r.className += ' t' + (Math.floor(Math.random() * 1000) % 8 + 1);
+                r.className += ' t' + (Math.floor(Math.random() * 1000) % 7 + 1);
                 r.notEmpty = true;
                 i = (Math.floor(j / 4) + 1) * 4 + nextKeyGen(2);
             } else {

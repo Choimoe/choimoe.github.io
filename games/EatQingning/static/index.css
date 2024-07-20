@@ -11,14 +11,14 @@ body {
     background-size: auto 60%;
 }
 
-.start_btn{
-    display:inline-block;
-    margin:0 auto;
-    width:8em;
-    height:1.7em;
-    line-height:1.7em;
-    font-size:2.2em;
-    color:#fff;
+.start_btn {
+    display: inline-block;
+    margin: 0 auto;
+    width: 8em;
+    height: 1.7em;
+    line-height: 1.7em;
+    font-size: 2.2em;
+    color: #fff;
 }
 
 .SHADE {
@@ -142,36 +142,43 @@ body {
 
 .t1 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore1.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqhp6.png");
 }
+
 .t2 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore2.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqc79.png");
 }
+
 .t3 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore3.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqWfx.png");
 }
+
 .t4 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore4.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTq2kR.png");
 }
+
 .t5 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore5.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqRt1.png");
 }
+
 .t6 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore6.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqIXD.png");
 }
+
 .t7 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore7.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTq56O.png");
 }
-.t8 {
+
+/* .t8 {
     background-size: auto 100%;
-    background-image: url(./image/ClickBefore8.png);
-}
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqTne.png");
+} */
 
 .tt1,
 .tt2,
@@ -179,7 +186,7 @@ body {
 .tt4,
 .tt5 {
     background-size: auto 86%;
-    background-image: url(./image/ClickAfter.png);
+    background-image: url("https://s21.ax1x.com/2024/07/21/pkTqTne.png");
 }
 
 .bl {
@@ -190,9 +197,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -202,9 +211,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -310,7 +321,8 @@ body {
     }
 }
 
-#GameScoreLayer .col-3, #GameScoreLayer .col-2 {
+#GameScoreLayer .col-3,
+#GameScoreLayer .col-2 {
     max-width: 144px;
 }
 
